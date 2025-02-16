@@ -24,7 +24,7 @@ const Login = () => {
       setToken(data.token);
       toast.success(data.message, { duration: 3000 });
       setLoading(false);
-      navigate("/");
+      navigate("FreshCart/");
     } catch (e) {
       toast.error(e.response.data.message, { duration: 3000 });
       setLoading(false);
@@ -109,7 +109,7 @@ const Login = () => {
           ) : (
             ""
           )}
-          <Link to={"/forgotPassword"} className="block mb-3">
+          <Link to={"FreshCart/forgotPassword"} className="block mb-3">
             Forgot your password ?
           </Link>
           <button

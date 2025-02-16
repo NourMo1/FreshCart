@@ -33,7 +33,7 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "FreshCart/",
           element: (
             <ProtectedRoute>
               <Home />
@@ -41,7 +41,7 @@ function App() {
           ),
         },
         {
-          path: "/home",
+          path: "FreshCart/home",
           element: (
             <ProtectedRoute>
               <Home />
@@ -49,7 +49,7 @@ function App() {
           ),
         },
         {
-          path: "/cart",
+          path: "FreshCart/cart",
           element: (
             <ProtectedRoute>
               <Cart />
@@ -57,7 +57,7 @@ function App() {
           ),
         },
         {
-          path: "/productDetails/:id",
+          path: "FreshCart/productDetails/:id",
           element: (
             <ProtectedRoute>
               <ProductDetails />
@@ -65,7 +65,7 @@ function App() {
           ),
         },
         {
-          path: "/categories",
+          path: "FreshCart/categories",
           element: (
             <ProtectedRoute>
               <Categories />
@@ -73,7 +73,7 @@ function App() {
           ),
         },
         {
-          path: "/brands",
+          path: "FreshCart/brands",
           element: (
             <ProtectedRoute>
               <Brands />
@@ -81,7 +81,7 @@ function App() {
           ),
         },
         {
-          path: "/payment",
+          path: "FreshCart/payment",
           element: (
             <ProtectedRoute>
               <Payment />
@@ -89,7 +89,7 @@ function App() {
           ),
         },
         {
-          path: "/wishlist",
+          path: "FreshCart/wishlist",
           element: (
             <ProtectedRoute>
               <Wishlist />
@@ -97,18 +97,18 @@ function App() {
           ),
         },
         {
-          path: "/allorders",
+          path: "FreshCart/allorders",
           element: (
             <ProtectedRoute>
               <Allorders />
             </ProtectedRoute>
           ),
         },
-        { path: "/login", element: <Login /> },
-        { path: "/forgotPassword", element: <ForgotPassword /> },
-        { path: "/verifyCode", element: <VerifyCode /> },
-        { path: "/resetPassword", element: <ResetPassword /> },
-        { path: "/register", element: <Register /> },
+        { path: "FreshCart/login", element: <Login /> },
+        { path: "FreshCart/forgotPassword", element: <ForgotPassword /> },
+        { path: "FreshCart/verifyCode", element: <VerifyCode /> },
+        { path: "FreshCart/resetPassword", element: <ResetPassword /> },
+        { path: "FreshCart/register", element: <Register /> },
         { path: "*", element: <Error /> },
       ],
     },

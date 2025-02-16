@@ -20,7 +20,7 @@ const ForgotPassword = () => {
         );
           toast.success(data.message);
           setLoading(false)
-          navigate("/verifyCode")
+          navigate("FreshCart/verifyCode");
       } catch (error) {
         
       }

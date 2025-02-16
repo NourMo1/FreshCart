@@ -21,7 +21,7 @@ const ResetPassword = () => {
       
     if (data.token) {
         toast.success("Your password updated successfully");
-        navigate("/login");
+        navigate("FreshCart/login");
     } else {
         toast.error("Something went wrong, please try again")
     }

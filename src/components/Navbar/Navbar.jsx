@@ -12,7 +12,7 @@ const Navbar = () => {
     function logout() {
       localStorage.removeItem("token");
       setToken(null);
-      navigate("/login");
+      navigate("FreshCart/login");
   }
 
   return (
@@ -57,7 +57,7 @@ const Navbar = () => {
               <>
                 <li>
                   <NavLink
-                    to={"/home"}
+                    to={"FreshCart/home"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Home
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"/categories"}
+                    to={"FreshCart/categories"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Categories
@@ -73,7 +73,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"/brands"}
+                    to={"FreshCart/brands"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Brands
@@ -81,7 +81,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"/wishlist"}
+                    to={"FreshCart/wishlist"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Wishlist
@@ -89,7 +89,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"/allorders"}
+                    to={"FreshCart/allorders"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Orders
@@ -131,7 +131,7 @@ const Navbar = () => {
               <>
                 <li>
                   <NavLink
-                    to={"/cart"}
+                    to={"FreshCart/cart"}
                     className="block py-2 px-3 text-gray-600 md:p-0 relative md:me-4"
                   >
                     Cart
@@ -156,7 +156,7 @@ const Navbar = () => {
               <>
                 <li>
                   <NavLink
-                    to={"/login"}
+                    to={"FreshCart/login"}
                     className="block cursor-pointer py-2 px-3 text-gray-600 md:p-0"
                   >
                     Login
@@ -164,7 +164,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"/register"}
+                    to={"FreshCart/register"}
                     className="block cursor-pointer py-2 px-3 text-gray-600 md:p-0"
                   >
                     Register
