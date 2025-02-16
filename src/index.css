@@ -1,0 +1,7 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@import "./../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
