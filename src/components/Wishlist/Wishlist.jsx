@@ -12,11 +12,15 @@ const Wishlist = () => {
   
 
   async function addToCart(id) {
-    const res = await addProductToCart(id);
-    if (res.status == "success") {
-      toast.success(res.message);
-    } else {
-      toast.error("Something went wrong, try again")
+    try {
+      const res = await addProductToCart(id);
+      if (res.status == "success") {
+        toast.success(res.message);
+      } else {
+        toast.error("Something went wrong, try again");
+      }
+    } catch (error) {
+      
     }
   }
 

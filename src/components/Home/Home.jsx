@@ -10,14 +10,12 @@ import { toast } from 'react-hot-toast';
 import { WishlistContext } from '../../Context/WishlistContext';
 import { useState } from 'react';
 import ReactPaginate from 'react-paginate';
-import { useFormik } from 'formik';
 
 const Home = () => {
   const { addProductToCart } = useContext(CartContext);
   const { addProductToWishlist, removeProductFromWishlist, isInWishlist } = useContext(WishlistContext);
   const [sort, setSort] = useState("-ratingsAverage");
   const [page, setPage] = useState(1);
-  const [search, setSearch] = useState("");
 
   async function getAllProducts() {
     return await axios.get("https://ecommerce.routemisr.com/api/v1/products", {
@@ -31,7 +29,7 @@ const Home = () => {
   }
 
   const { isLoading, data } = useQuery({
-    queryKey: ["getAllProducts", sort, page, search],
+    queryKey: ["getAllProducts", sort, page],
     queryFn: getAllProducts,
   });
 
