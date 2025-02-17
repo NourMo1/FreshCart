@@ -104,10 +104,16 @@ function App() {
             </ProtectedRoute>
           ),
         },
-        { path: "/login", element: <Login /> },
-        { path: "login/forgotPassword", element: <ForgotPassword /> },
-        { path: "login/verifyCode", element: <VerifyCode /> },
-        { path: "login/resetPassword", element: <ResetPassword /> },
+        {
+          path: "/login",
+          element: <Login />,
+          children: [
+            { path: "/forgotPassword", element: <ForgotPassword /> },
+            { path: "/verifyCode", element: <VerifyCode /> },
+            { path: "/resetPassword", element: <ResetPassword /> },
+          ],
+        },
+
         { path: "/register", element: <Register /> },
         { path: "*", element: <Error /> },
       ],
