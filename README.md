@@ -6,6 +6,7 @@
 
 - Product Listings: Browse products with images, descriptions, and prices.
 - User Authentication: Secure login and registration system.
+- Validation: Every input  has own validation and error message.
 - Shopping Cart: Add, remove, and adjust quantities of items.
 - Wishlist: Add, and remove products.
 - Order Management: View order history and track current orders.
@@ -15,7 +16,7 @@
 
 # Technologies Used
 
-- Frontend: React, TanStack Query and Context (State Managment), TailwindCSS and Font Awesome for styling.
+- Frontend: React, TanStack Query and Context (State Managment), Formik, Yup TailwindCSS, and Font Awesome for styling.
 - Database: Real Database.
 - Authentication: JSON Web Tokens (JWT).
 
