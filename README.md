@@ -16,8 +16,8 @@
 
 # Technologies Used
 
-- Frontend: React, TanStack Query and Context (State Managment), Formik, Yup, React-Hot-Toast TailwindCSS, and Font Awesome for styling.
-- Database: Real Database.
+- Frontend: React, TanStack Query and Context for State Managment, Formik and Yup for form validation, React-Hot-Toast for alerts TailwindCSS, and Font Awesome for styling and other.
+- Database: Real-Time Database.
 - Authentication: JSON Web Tokens (JWT).
 
 
