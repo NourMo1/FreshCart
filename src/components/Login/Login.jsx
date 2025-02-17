@@ -24,7 +24,7 @@ const Login = () => {
       setToken(data.token);
       toast.success(data.message, { duration: 3000 });
       setLoading(false);
-      navigate("FreshCart/");
+      navigate("/home");
     } catch (e) {
       toast.error(e.response.data.message, { duration: 3000 });
       setLoading(false);
@@ -109,12 +109,12 @@ const Login = () => {
           ) : (
             ""
           )}
-          <Link to={"FreshCart/forgotPassword"} className="block mb-3">
+          <Link to={"forgotPassword"} className="block mb-3">
             Forgot your password ?
           </Link>
           <button
             type="submit"
-            className="cursor-pointer text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="cursor-pointer text-white bg-green-500  focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {loading ? (
               <i className="fa-solid fa-circle-notch fa-spin text-white"></i>

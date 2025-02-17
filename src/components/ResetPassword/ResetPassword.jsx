@@ -21,7 +21,7 @@ const ResetPassword = () => {
       
     if (data.token) {
         toast.success("Your password updated successfully");
-        navigate("FreshCart/login");
+        navigate("/login");
     } else {
         toast.error("Something went wrong, please try again")
     }
@@ -109,7 +109,7 @@ const ResetPassword = () => {
           )}
           <button
             type="submit"
-            className="cursor-pointer text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="cursor-pointer text-white bg-green-500  focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {loading ? (
               <i className="fa-solid fa-circle-notch fa-spin text-white"></i>

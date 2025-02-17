@@ -1,5 +1,5 @@
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import Home from './components/Home/Home'
 import Brands from './components/Brands/Brands'
@@ -27,9 +27,9 @@ function App() {
   
   const Query = new QueryClient()
   
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
-      path: "",
+      path: "/",
       element: <Layout />,
       children: [
         {
@@ -81,7 +81,7 @@ function App() {
           ),
         },
         {
-          path: "/payment",
+          path: "payment",
           element: (
             <ProtectedRoute>
               <Payment />

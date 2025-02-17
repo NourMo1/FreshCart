@@ -25,9 +25,7 @@ a,
 a:hover {
     text-decoration: none;
 }
-a:hover {
-    color: #030712;
-}
+
 .checkout a:hover {
     color: #fff;
 }

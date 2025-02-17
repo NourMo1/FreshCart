@@ -45,8 +45,6 @@ const WishlistContextProvider = ({children}) => {
       );
       let updatedWishlist = [...wishlist, product];
       setWishlist(updatedWishlist);
-      console.log(data);
-      
       localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
     } catch (error) {
       
