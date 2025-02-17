@@ -26,7 +26,7 @@ const ProductDetails = () => {
       const res = await addProductToCart(id);
       if (res.status == "success") {
         toast.success(res.message);
-        navigate("FreshCart/cart");
+        navigate("/cart");
         setloading(false)
       } else {
         toast.error("Something went wrong, try again")

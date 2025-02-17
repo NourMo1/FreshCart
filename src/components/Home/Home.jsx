@@ -122,7 +122,7 @@ const Home = () => {
                             }`}
                           ></i>
                         </button>
-                        <Link to={`FreshCart/productDetails/${product.id}`}>
+                        <Link to={`/productDetails/${product.id}`}>
                           <div className="image">
                             <img
                               className="w-full"

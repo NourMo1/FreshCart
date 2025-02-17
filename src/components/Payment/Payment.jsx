@@ -59,7 +59,7 @@ const Payment = () => {
         setTotalCartPrice(0);
         setProducts([]);
         setLoading(false);
-        navigate("FreshCart/allorders");
+        navigate("/allorders");
       } else {
         setLoading(false);
         toast.error("Please fill the form")

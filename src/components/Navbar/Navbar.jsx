@@ -1,18 +1,17 @@
 import { useContext } from "react";
 import logo from "./../../assets/freshcart-logo.svg";
-import { NavLink, Link, useNavigate } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
-import { CartContext } from './../../Context/CartContext';
+import { CartContext } from "./../../Context/CartContext";
 
 const Navbar = () => {
-
-  const {products, numOfItems, totalCartPrice} = useContext(CartContext)
+  const { products, numOfItems, totalCartPrice } = useContext(CartContext);
   const { token, setToken } = useContext(AuthContext);
-  const navigate = useNavigate()
-    function logout() {
-      localStorage.removeItem("token");
-      setToken(null);
-      navigate("FreshCart/login");
+  const navigate = useNavigate();
+  function logout() {
+    localStorage.removeItem("token");
+    setToken(null);
+    navigate("/login");
   }
 
   return (
@@ -22,7 +21,7 @@ const Navbar = () => {
           to="home"
           className="flex items-center space-x-3 rtl:space-x-reverse me-5"
         >
-          <img src={logo} className="h-8" alt="FreshCart Logo" />
+          <img src={logo} className="h-8" alt=" Logo" />
         </Link>
         <button
           data-collapse-toggle="navbar-default"
@@ -57,7 +56,7 @@ const Navbar = () => {
               <>
                 <li>
                   <NavLink
-                    to={"FreshCart/home"}
+                    to={"/home"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Home
@@ -65,7 +64,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"FreshCart/categories"}
+                    to={"/categories"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Categories
@@ -73,7 +72,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"FreshCart/brands"}
+                    to={"/brands"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Brands
@@ -81,7 +80,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"FreshCart/wishlist"}
+                    to={"/wishlist"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Wishlist
@@ -89,7 +88,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"FreshCart/allorders"}
+                    to={"/allorders"}
                     className="block py-2 px-3 text-gray-600 md:p-0"
                   >
                     Orders
@@ -131,7 +130,7 @@ const Navbar = () => {
               <>
                 <li>
                   <NavLink
-                    to={"FreshCart/cart"}
+                    to={"/cart"}
                     className="block py-2 px-3 text-gray-600 md:p-0 relative md:me-4"
                   >
                     Cart
@@ -156,7 +155,7 @@ const Navbar = () => {
               <>
                 <li>
                   <NavLink
-                    to={"FreshCart/login"}
+                    to={"/login"}
                     className="block cursor-pointer py-2 px-3 text-gray-600 md:p-0"
                   >
                     Login
@@ -164,7 +163,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"FreshCart/register"}
+                    to={"/register"}
                     className="block cursor-pointer py-2 px-3 text-gray-600 md:p-0"
                   >
                     Register
@@ -177,6 +176,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

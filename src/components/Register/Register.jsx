@@ -16,7 +16,7 @@ const Register = () => {
       const {data} = await axios.post("https://ecommerce.routemisr.com/api/v1/auth/signup", values);
       toast.success(data.message, { duration: 3000 });
       setLoading(false);
-      navigate("FreshCart/login");
+      navigate("/login");
     }
     catch(e) {
       toast.error(e.response.data.message, { duration: 3000 });

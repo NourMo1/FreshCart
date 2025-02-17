@@ -96,7 +96,7 @@ const Cart = () => {
                 })}
                 <div className="checkout">
                   <Link
-                    to={"FreshCart/payment"}
+                    to={"/payment"}
                     className="block text-center mt-3 w-full rounded-lg text-white bg-green-500 px-2 py-3"
                   >
                     Checkout <i className="fa-solid fa-money-bill ms-2"></i>
