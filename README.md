@@ -21,4 +21,4 @@
 
 # My Links: 
 
-### [Facebook](https://www.facebook.com/share/1D3KmZEH8D/)  [Linkedin](https://www.linkedin.com/in/nour-aldin-mohamed/)
+### [Facebook](https://www.facebook.com/share/1D3KmZEH8D/) and [Linkedin](https://www.linkedin.com/in/nour-aldin-mohamed/)
