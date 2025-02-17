@@ -19,7 +19,7 @@ const VerifyCode = () => {
         values
       );
       setLoading(false);
-      navigate("/resetPassword");
+      navigate("login/resetPassword");
     } catch (e) {
       toast.error(e.response.data.message);
       setLoading(false);
