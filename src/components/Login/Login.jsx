@@ -109,7 +109,7 @@ const Login = () => {
           ) : (
             ""
           )}
-          <Link to={"forgotPassword"} className="block mb-3">
+          <Link to={"/forgotPassword"} className="block mb-3">
             Forgot your password ?
           </Link>
           <button
