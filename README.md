@@ -10,6 +10,7 @@
 - Wishlist: Add, and remove products.
 - Order Management: View order history and track current orders.
 - Payment Integration: Secure payment gateway integration (e.g., Stripe).
+- UI/UX: Good user interface and user experience.
 
 
 # Technologies Used
